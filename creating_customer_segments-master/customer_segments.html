@@ -19532,8 +19532,10 @@ CyZJkiRJ6rBgkiRJkqSO/wUmsGpjgOjg6AAAAABJRU5ErkJggg==
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong></p>
-<p>前两个主成分方差分别为0.4430和0.2638。从第三个主成分开始方差为0.1231、0.1012。<br></p>
-<p>对发货速度要求高的用户，以及不高的用户。从图中可以看到Dimension 1正向增长影响最大分别是Fresh/Frozen这些都是保质期比较短的东西，负增长最大的是Detergent_Paper和Grocery这些是保质期比较长的物品。Dimension 2负向增长前三的Fresh、Frozen、Deliatessian这些也是保质期比较短的物品并且前四个主成分都有类似的特点。</p>
+<p>Dimension 1:方差为0.4430，Detergent_Paper、Grocery、Milk负相关较大，所以维度一代表的是Detergents_Paper/Grocery/Milk保质时间相对长一些的物品，这部分用户对发货时间敏感度相对不高。<br>
+Dimension 2:方差为0.2638所有的features都是负增长，但是可以很明显的发现Fresh、Frozen、Delicatessen三个Features关联度较大，物品保质期较短，这部分用户对发货时间明感度较高。<br>
+Dimension 3:方差为0.1231，关联度较大Features是Fresh/Frozen/Delicatessen。代表客户为发货时间较敏感的客户。
+Dimension 4:方差为0.1012，关联度最大的属性为Frozen，其次为Delicatessen.这部分客户对发货时间较敏感</p>
 
 </div>
 </div>
